@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding-bottom: 80px;
+            background-color: rgba(95, 47, 255, 0.134);
+        }
+        header{
+            background:#131921;
+            padding:18px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        header a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+     
+        .cart-main {
+            flex: 3;
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .cart-main h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            color: #565959;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        .product-cell {
+            display: flex;
+            gap: 15px;
+        }
+
+        .img-container {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+            border-radius: 4px;
+        }
+
+        .cart-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .product-cell a:hover .cart-img {
+            transform: scale(1.15);
+        }
+
+        .product-info a {
+            text-decoration: none;
+            color: #007185;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .product-info a:hover {
+            color: #C7511F;
+        }
+
+        .stock-status {
+            color: #007600;
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+        .action-links {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .action-links a {
+            color: #007185;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .quantity-select {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #D5D9D9;
+            background: #F0F2F2;
+            cursor: pointer;
+        }
+
+        .price-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #111;
+            text-align: right;
+        }
+
+        .cart-sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+
+        .subtotal-box {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            background: #FFD814;
+            border: 1px solid #FCD200;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(213,217,217,.5);
+        }
+
+        .checkout-btn:hover {
+            background: #F7CA00;
+        }
+
+        footer{
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            background:#131921;
+            display:flex;
+            justify-content:space-around;
+            padding:15px 0;
+            box-shadow:0 -2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        footer a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:8px 15px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        footer a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="Fashion.html">Fashion</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="Products.html">Products</a>
+        <a href="Books.html">Books</a>
+
+    </header>
+
+    <div class="container">
+       
+        <div class="cart-main">
+            <h2>Shopping Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 65%">Price Details</th>
+                        <th style="width: 15%">Quantity</th>
+                        <th style="width: 20%; text-align: right;">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <a href="https://en.wikipedia.org/wiki/Hoodie" target="_blank">
+                                    <div class="img-container">
+                                        <img class="cart-img" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=150&q=80" alt="Product 1">
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <a href="https://en.wikipedia.org/wiki/Hoodie" target="_blank">Aesthetic Heavyweight Oversized Hoodie</a>
+                                    <p class="stock-status">In Stock</p>
+                                    <p style="font-size: 12px; color: #565959;">Color: Charcoal Black</p>
+                                    <div class="action-links">
+                                        <a href="#">Delete</a> | <a href="#">Save for later</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="quantity-select">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                        <td class="price-text">$48.00</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <a href="https://en.wikipedia.org/wiki/Sneakers" target="_blank">
+                                    <div class="img-container">
+                                        <img class="cart-img" src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=150&q=80" alt="Product 2">
+                                    </div>
+                                </a>
+                                <div class="product-info">
+                                    <a href="https://en.wikipedia.org/wiki/Sneakers" target="_blank">Chunky Platform Retro Sneakers</a>
+                                    <p class="stock-status">In Stock</p>
+                                    <p style="font-size: 12px; color: #565959;">Size: 10 US Mens</p>
+                                    <div class="action-links">
+                                        <a href="#">Delete</a> | <a href="#">Save for later</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="quantity-select">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                        <td class="price-text">$170.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       
+        <div class="cart-sidebar">
+            <div class="subtotal-box">
+                Subtotal (3 items): <strong>$218.00</strong>
+            </div>
+            <button class="checkout-btn">Proceed to checkout</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+    <footer>
+        <a href="home.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="index.html">Sign out</a>
+        <a href="Cart.html">Cart</a>
+    </footer>
+
+</body>
+</html>

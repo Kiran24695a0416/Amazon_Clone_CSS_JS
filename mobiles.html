@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Mobile Phones</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding-bottom: 80px;
+            background-color: rgba(95, 47, 255, 0.134);
+        }
+        header{
+            background:#131921;
+            padding:18px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        header a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #131921;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        table td a {
+            display: block;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .mobile-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        /* Smooth zoom animation when hovering over a mobile device box */
+        table td a:hover .mobile-img {
+            transform: scale(1.12);
+        }
+
+        h3 {
+            font-size: 14px;
+            margin: 8px 0;
+            color: #111;
+            font-weight: bold;
+        }
+
+        .price {
+            color: #B12704;
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .features {
+            font-size: 11px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        footer{
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            background:#131921;
+            display:flex;
+            justify-content:space-around;
+            padding:15px 0;
+            box-shadow:0 -2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        footer a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:8px 15px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        footer a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="Fashion.html">Fashion</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="Products.html">Products</a>
+        <a href="Books.html">Books</a>
+
+    </header>
+
+    <div class="container">
+        <h2>Top Smartphones Market </h2>
+        <table>
+            <tr>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=300&q=80" alt="Titanium Flagship">
+                        </div>
+                        <h3>AeroX Pro Titanium Max</h3>
+                        <p class="price">$1,199.00</p>
+                        <p class="features">Specs: 256GB Storage, 3nm AI chip, Ultra-wide Titanium chassis, 200MP Triple Camera matrix with 5x Optical zoom.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=300&q=80" alt="Ultra Zoom Flagship">
+                        </div>
+                        <h3>Nova Ultra 5G Stylus</h3>
+                        <p class="price">$1,249.00</p>
+                        <p class="features">Specs: 512GB Storage, Integrated Bluetooth Stylus, Dynamic AMOLED 120Hz panel, 100x Space Zoom system.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=300&q=80" alt="Pure Android Flagship">
+                        </div>
+                        <h3>Zenith Pixel Prime Lens</h3>
+                        <p class="price">$999.00</p>
+                        <p class="features">Specs: 128GB Storage, Pure AI Computational Photography system, NightSight Master, 7-year direct software lifecycle support.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1565630916779-e303be97b6f5?auto=format&fit=crop&w=300&q=80" alt="Luxury Flagship">
+                        </div>
+                        <h3>Aura Gloss Ceramic Edition</h3>
+                        <p class="price">$1,399.00</p>
+                        <p class="features">Specs: 1TB Storage, Real zirconia ceramic back cover plate, 16GB RAM overhead performance, satellite mesh connectivity tech.</p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Foldable_smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Foldable_Smartphones.jpg/500px-Foldable_Smartphones.jpg">
+                        </div>
+                        <h3>Horizon Fold Dual Screen</h3>
+                        <p class="price">$1,799.00</p>
+                        <p class="features">Specs: 512GB Storage, Infinity flexible structural inner display, multi-window tablet workflow multi-task environment.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Foldable_smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&w=300&q=80" alt="Flip Foldable">
+                        </div>
+                        <h3>Veloce Flip Pocket Smart</h3>
+                        <p class="price">$949.00</p>
+                        <p class="features">Specs: 256GB Storage, Compact clamshell retro design, large external interactive screen panel layout, handsfree preview.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1574755393849-623942496936?auto=format&fit=crop&w=300&q=80" alt="Gaming Mobile">
+                        </div>
+                        <h3>Titan Matrix 9 Gaming Engine</h3>
+                        <p class="price">$899.00</p>
+                        <p class="features">Specs: 16GB RAM, Internal vapor cooling chamber fan, dual capacitive shoulder click triggers, 165Hz screen panel.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Samsung_Galaxy_S6_edge_%2817448278539%29.jpg/500px-Samsung_Galaxy_S6_edge_%2817448278539%29.jpg">
+                        </div>
+                        <h3>Cinematic Studio Cam V3</h3>
+                        <p class="price">$1,099.00</p>
+                        <p class="features">Specs: 256GB Storage, Uncompressed 10-bit LOG video profile capture, physical click rotation zoom dial interface casing.</p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=300&q=80" alt="Value Phone">
+                        </div>
+                        <h3>Strato Balanced Core Plus</h3>
+                        <p class="price">$499.00</p>
+                        <p class="features">Specs: 128GB Storage, High efficiency flagship speed chip, IP67 dust water structural proof seal, dual Stereo audio.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=300&q=80" alt="Battery King">
+                        </div>
+                        <h3>VoltForce 7000 Heavy Battery</h3>
+                        <p class="price">$379.00</p>
+                        <p class="features">Specs: 128GB Storage, Massive 7000mAh structural fuel container, 65W flash wall charging power, 3 days life metric.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=300&q=80" alt="Slim Elegant Mobile">
+                        </div>
+                        <h3>Lumina Sleek Matte Fit</h3>
+                        <p class="price">$429.00</p>
+                        <p class="features">Specs: 256GB Storage, Super-slim 6.8mm structural frame form, featherlight 155g composition weight, glass wrap.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/20240419_%EC%82%BC%EC%84%B1_%EA%B0%A4%EB%9F%AD%EC%8B%9C_S24_%EC%9A%B8%ED%8A%B8%EB%9D%BC.jpg/500px-20240419_%EC%82%BC%EC%84%B1_%EA%B0%A4%EB%9F%AD%EC%8B%9C_S24_%EC%9A%B8%ED%8A%B8%EB%9D%BC.jpg">
+                        </div>
+                        <h3>CyberShot Night Vision Ray</h3>
+                        <p class="price">$450.00</p>
+                        <p class="features">Specs: 128GB Storage, Custom mechanical camera stabilizer gimbal tracking axis, low light optimal iso tuning.</p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=300&q=80" alt="Budget Phone">
+                        </div>
+                        <h3>SmartStart Basic Connect</h3>
+                        <p class="price">$199.00</p>
+                        <p class="features">Specs: 64GB Storage, Reliable octa-core processing unit layout, expansible SD-card slot, crisp HD clear view.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&w=300&q=80" alt="Rugged Phone">
+                        </div>
+                        <h3>ArmorTough Military Spec Active</h3>
+                        <p class="price">$299.00</p>
+                        <p class="features">Specs: 128GB Storage, Military standard shockproof drop protection drop casing, rubber side bumpers.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/20240419_%EC%82%BC%EC%84%B1_%EA%B0%A4%EB%9F%AD%EC%8B%9C_S24_%EC%9A%B8%ED%8A%B8%EB%9D%BC.jpg/500px-20240419_%EC%82%BC%EC%84%B1_%EA%B0%A4%EB%9F%AD%EC%8B%9C_S24_%EC%9A%B8%ED%8A%B8%EB%9D%BC.jpg" alt="Youth Budget Mobile">
+                        </div>
+                        <h3>TrendFi Bold Youth V2</h3>
+                        <p class="price">$249.00</p>
+                        <p class="features">Specs: 128GB Storage, Bright holographic gradient textured casing finish, optimized streaming social apps codec platform.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=300&q=80" alt="Minimalist Phone">
+                        </div>
+                        <h3>E-Ink Minimalist Digital Detox</h3>
+                        <p class="price">$320.00</p>
+                        <p class="features">Specs: 32GB Storage, Paper-like electronic ink layout, extreme text processing readable glare-free profile, ultra low drain.</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+<script src="script.js"></script>
+    <footer>
+        <a href="home.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="index.html">Sign out</a>
+        <a href="Cart.html">Cart</a>
+    </footer>
+
+</body>
+</html>

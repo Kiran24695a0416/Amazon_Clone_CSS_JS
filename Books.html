@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Bookstore Essentials</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding-bottom: 80px;
+            background-color: rgba(95, 47, 255, 0.134);
+        }
+        header{
+            background:#131921;
+            padding:18px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        header a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #131921;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        table td a {
+            display: block;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fcfcfc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .mobile-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        
+        table td a:hover .mobile-img {
+            transform: scale(1.12);
+        }
+
+        h3 {
+            font-size: 14px;
+            margin: 6px 0 2px 0;
+            color: #111;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .author {
+            font-size: 12px;
+            color: #565959;
+            margin-bottom: 6px;
+        }
+
+        .price {
+            color: #B12704;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .features {
+            font-size: 11px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        footer{
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            background:#131921;
+            display:flex;
+            justify-content:space-around;
+            padding:15px 0;
+            box-shadow:0 -2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        footer a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:8px 15px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        footer a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="Fashion.html">Fashion</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="Products.html">Products</a>
+        <a href="Books.html">Books</a>
+
+    </header>
+
+    <div class="container">
+        <h2>Best Sellers in Books</h2>
+        <table>
+            <tr>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Dune_(novel)" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=300&q=80" alt="Dune Cover">
+                        </div>
+                        <h3>Dune: Deluxe Edition</h3>
+                        <p class="author">by Frank Herbert</p>
+                        <p class="price">$14.99</p>
+                        <p class="features">Format: Paperback. The legendary sci-fi epic masterpiece set on the desert planet of Arrakis.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/The_Hobbit" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?auto=format&fit=crop&w=300&q=80" alt="The Hobbit Cover">
+                        </div>
+                        <h3>The Hobbit</h3>
+                        <p class="author">by J.R.R. Tolkien</p>
+                        <p class="price">$10.99</p>
+                        <p class="features">Format: Mass Market. The timeless prelude classic fantasy adventure to the Lord of the Rings trilogy.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Project_Hail_Mary" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=300&q=80" alt="Sci-Fi Book Cover">
+                        </div>
+                        <h3>Project Hail Mary</h3>
+                        <p class="author">by Andy Weir</p>
+                        <p class="price">$16.80</p>
+                        <p class="features">Format: Hardcover. A lone astronaut must save Earth from an extinction-level cosmic threat.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Foundation_(novel)" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=300&q=80" alt="Foundation Cover">
+                        </div>
+                        <h3>Foundation</h3>
+                        <p class="author">by Isaac Asimov</p>
+                        <p class="price">$12.50</p>
+                        <p class="features">Format: Paperback. The structural chronicle of the fall and rebirth of a massive galactic empire.</p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Atomic_Habits" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=300&q=80" alt="Atomic Habits Cover">
+                        </div>
+                        <h3>Atomic Habits</h3>
+                        <p class="author">by James Clear</p>
+                        <p class="price">$11.99</p>
+                        <p class="features">Format: Hardcover. An easy and proven framework to build good habits and break bad ones cleanly.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Deep_Work_(book)" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=300&q=80" alt="Deep Work Cover">
+                        </div>
+                        <h3>Deep Work</h3>
+                        <p class="author">by Cal Newport</p>
+                        <p class="price">$15.45</p>
+                        <p class="features">Format: Paperback. Rules for focused structural success in a world full of constant digital distractions.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=300&q=80" alt="Thinking Fast Slow Cover">
+                        </div>
+                        <h3>Thinking, Fast and Slow</h3>
+                        <p class="author">by Daniel Kahneman</p>
+                        <p class="price">$13.99</p>
+                        <p class="features">Format: Paperback. A profound breakdown of the two systems that drive the way we make choices.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Subtle_Art_of_Not_Giving_a_Fck" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=300&q=80" alt="Self Help Cover">
+                        </div>
+                        <h3>The Subtle Art of Not Giving...</h3>
+                        <p class="author">by Mark Manson</p>
+                        <p class="price">$14.00</p>
+                        <p class="features">Format: Hardcover. A counterintuitive global guide to living a realistic, honest, and grounded life.</p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Da_Vinci_Code" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=300&q=80" alt="Da Vinci Code Cover">
+                        </div>
+                        <h3>The Da Vinci Code</h3>
+                        <p class="author">by Dan Brown</p>
+                        <p class="price">$9.99</p>
+                        <p class="features">Format: Paperback. A high-octane mystery thriller involving hidden symbols inside famous European art.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Gone_Girl_(novel)" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=300&q=80" alt="Thriller Cover">
+                        </div>
+                        <h3>Gone Girl</h3>
+                        <p class="author">by Gillian Flynn</p>
+                        <p class="price">$11.20</p>
+                        <p class="features">Format: Paperback. A brilliant, suspenseful look at a broken marriage turned dark criminal puzzle.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/And_Then_There_Were_None" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://upload.wikimedia.org/wikipedia/en/2/26/And_Then_There_Were_None_US_First_Edition_Cover_1940.jpg" alt="Mystery Cover">
+                        </div>
+                        <h3>And Then There Were None</h3>
+                        <p class="author">by Agatha Christie</p>
+                        <p class="price">$8.99</p>
+                        <p class="features">Format: Paperback. The legendary masterwork puzzle where ten strangers are trapped on an isolated island.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Silent_Patient" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://upload.wikimedia.org/wikipedia/en/d/df/The_Silent_Patient_early_2019_UK_edition.png" alt="Silent Patient Cover">
+                        </div>
+                        <h3>The Silent Patient</h3>
+                        <p class="author">by Alex Michaelides</p>
+                        <p class="price">$12.99</p>
+                        <p class="features">Format: Hardcover. A shocking psychological thriller about a woman's act of violence against her husband.</p>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Psychology_of_Money_(book)" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=300&q=80" alt="Psychology of Money Cover">
+                        </div>
+                        <h3>The Psychology of Money</h3>
+                        <p class="author">by Morgan Housel</p>
+                        <p class="price">$13.50</p>
+                        <p class="features">Format: Paperback. Timeless life lessons on wealth, greed, ego, and personal choice behavior patterns.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=300&q=80" alt="Rich Dad Cover">
+                        </div>
+                        <h3>Rich Dad Poor Dad</h3>
+                        <p class="author">by Robert T. Kiyosaki</p>
+                        <p class="price">$11.00</p>
+                        <p class="features">Format: Paperback. Explores what the rich teach their kids about money that the poor do not.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Intelligent_Investor" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=300&q=80" alt="Finance Cover">
+                        </div>
+                        <h3>The Intelligent Investor</h3>
+                        <p class="author">by Benjamin Graham</p>
+                        <p class="price">$17.99</p>
+                        <p class="features">Format: Paperback. The definitive textbook framework regarding long-term structural value investing logic.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Zero_to_One" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=300&q=80" alt="Zero to One Cover">
+                        </div>
+                        <h3>Zero to One</h3>
+                        <p class="author">by Peter Thiel</p>
+                        <p class="price">$15.00</p>
+                        <p class="features">Format: Hardcover. Notes on startups, future technological engineering, and how to build a singular monopoly.</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+
+    <footer>
+        <a href="home.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="index.html">Sign out</a>
+        <a href="Cart.html">Cart</a>
+    </footer>
+
+</body>
+</html>

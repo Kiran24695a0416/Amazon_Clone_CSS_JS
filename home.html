@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding-bottom: 80px;
+            background-color: rgba(95, 47, 255, 0.134);
+        }
+        header{
+            background:#131921;
+            padding:18px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        header a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        .hero-banner {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1)), 
+                        url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #131921;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px;
+            margin-bottom: 30px;
+        }
+
+        td {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 4px;
+            text-align: left;
+            vertical-align: top;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        table td a {
+            display: block;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .home-card-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+       
+        table td a:hover .home-card-img {
+            transform: scale(1.10);
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #111;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .explore-link {
+            color: #007185;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        table td a:hover .explore-link {
+            text-decoration: underline;
+            color: #C7511F;
+        }
+
+        footer{
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            background:#131921;
+            display:flex;
+            justify-content:space-around;
+            padding:15px 0;
+            box-shadow:0 -2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        footer a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:8px 15px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        footer a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <a href="Fashion.html">Fashion</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="Products.html">Products</a>
+        <a href="Books.html">Books</a>
+
+    </header>
+
+
+
+    <div class="slideshow-container">
+        <div class="welcome-box" text-ali>
+        <h1>Welcome back to Amazon Clone Marketplace</h1>
+        
+        
+        <!-- <div class="card-grid">
+            <div class="simple-card">
+                <h2>Department Center</h2>
+                <p>Jump to targeted category filters immediately.</p>
+                <a href="Categories.html">Browse Sections</a>
+            </div> -->
+            
+            <!-- <div class="simple-card">
+                <h3>Shopping Container</h3>
+                <p>Review standard saved purchase intent logs.</p>
+                <a href="Cart.html">Open Cart Ledger</a>
+            </div> -->
+        </div>
+        <div class="mySlides fade">
+            <img src="https://wallpapers.com/images/hd/woman-shopping-with-sunglasses-uay1ouvdkfft2lu6.jpg" alt="Next-Gen Electronics Banner">
+            <div class="slide-text">Upgrade Your Setup — Next-Gen Electronics</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&h=400&q=80" alt="Summer Fashion Banner">
+            <div class="slide-text">Redefine Style — Global Trends in Fashion</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://stat5.bollywoodhungama.in/wp-content/uploads/2016/03/Kajal-Aggarwal-61.jpg" alt="Books and Media Banner">
+            <div class="slide-text">Expand Your Mind — Curated Literary Collections</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&h=400&q=80" alt="Home and Kitchen Goods Banner">
+            <div class="slide-text">Elevate Your Living Space — Premium Home & Kitchen Essentials</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://https://c8.alamy.com/comp/TTKFRG/woman-with-shopping-bags-looking-in-shop-window-TTKFRG.jpg" alt="Sports and Fitness Equipment Banner">
+            <div class="slide-text">Unleash Your Power — High-Performance Athletic Gear</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://as2.ftcdn.net/v2/jpg/01/91/85/19/1000_F_191851943_LF2Bjm6vadPSN3hUq9POUZhXrlkCWOAi.jpg" alt="Mega Sale and Shopping Offers Banner">
+            <div class="slide-text">Flash Deals Matrix — Up to 40% Off Select Marketplace Tiers</div>
+        </div>
+
+        <a class="prev-slide" onclick="moveSlides(-1)">&#10094;</a>
+        <a class="next-slide" onclick="moveSlides(1)">&#10095;</a>
+
+        <div class="dot-wrapper">
+            <span class="slide-dot" onclick="setCurrentSlide(1)"></span>
+            <span class="slide-dot" onclick="setCurrentSlide(2)"></span>
+            <span class="slide-dot" onclick="setCurrentSlide(3)"></span>
+            <span class="slide-dot" onclick="setCurrentSlide(4)"></span>
+            <span class="slide-dot" onclick="setCurrentSlide(5)"></span>
+            <span class="slide-dot" onclick="setCurrentSlide(6)"></span>
+        </div>
+    </div>
+
+    
+    </div>
+
+        <h2>Explore Featured Deals</h2>
+        
+        <table>
+            <tr>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Hoodie" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=300&q=80" alt="Oversized Hoodie">
+                        </div>
+                        <h3>Aesthetic Heavyweight Oversized Hoodie</h3>
+                        <p class="price">$48.00</p>
+                        <p class="features">Style: Streetwear Core. Drop shoulder styling, double-lined spacious hood, premium 420 GSM brush fleece finish.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Sweater" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1614975058789-41316d0e2e9c?auto=format&fit=crop&w=300&q=80" alt="Knit Sweater">
+                        </div>
+                        <h3>Vintage Distressed Knit Sweater</h3>
+                        <p class="price">$42.50</p>
+                        <p class="features">Style: Grunge Minimalist. Breathable textured knit cotton blend, dropped armhole detailing, slightly frayed hem accents.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Flannel" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/e/v/q/3xl-tgy-bl-br-nvrnplaind164-tripr-original-imahkmzgeardhceg.jpeg?q=70" alt="Boxy Flannel">
+                        </div>
+                        <h3>Boxy-Fit Plaid Overshirt Flannel</h3>
+                        <p class="price">$36.00</p>
+                        <p class="features">Style: Street Layering. Straight-cut relaxed fit hem, custom utility flap chest layout, mid-weight layering warmth.</p>
+                    </a>
+                </td>
+             
+            </tr>
+            <tr>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Dune_(novel)" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=300&q=80" alt="Dune Cover">
+                        </div>
+                        <h3>Dune: Deluxe Edition</h3>
+                        <p class="author">by Frank Herbert</p>
+                        <p class="price">$14.99</p>
+                        <p class="features">Format: Paperback. The legendary sci-fi epic masterpiece set on the desert planet of Arrakis.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/The_Hobbit" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1629992101753-56d196c8aabb?auto=format&fit=crop&w=300&q=80" alt="The Hobbit Cover">
+                        </div>
+                        <h3>The Hobbit</h3>
+                        <p class="author">by J.R.R. Tolkien</p>
+                        <p class="price">$10.99</p>
+                        <p class="features">Format: Mass Market. The timeless prelude classic fantasy adventure to the Lord of the Rings trilogy.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Project_Hail_Mary" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=300&q=80" alt="Sci-Fi Book Cover">
+                        </div>
+                        <h3>Project Hail Mary</h3>
+                        <p class="author">by Andy Weir</p>
+                        <p class="price">$16.80</p>
+                        <p class="features">Format: Hardcover. A lone astronaut must save Earth from an extinction-level cosmic threat.</p>
+                    </a>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Evaporative_cooler" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://shop.symphonylimited.com/cdn/shop/articles/Symphony_Air_Coolers_for_Every_Budget__Comparing_Prices_and_Features.png?v=1681130364">
+                        </div>
+                        <h3>BreezeKing 75L Desert Air Cooler</h3>
+                        <p class="price">$199.00</p>
+                        <p class="features">Features: Honeycomb Cooling Pads, Powerful Air Throw, Ice Chamber, Low Power Consumption.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Air_conditioner" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse1.mm.bing.net/th/id/OIP.WHmxg_5w97pYg8j4U2ghYgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Split AC">
+                        </div>
+                        <h3>FrostWind 1.5 Ton 5-Star Split AC</h3>
+                        <p class="price">$699.00</p>
+                        <p class="features">Features: Dual Inverter Compressor, 4-in-1 Convertible Cooling, PM 2.5 Filter, 100% Copper Tubes.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Evaporative_cooler" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://shop.symphonylimited.com/cdn/shop/files/WhatsApp_Image_2025-05-03_at_1.43.23_PM.jpg?v=1746262140">
+                        </div>
+                        <h3>AeroSlim 35L Personal Tower Cooler</h3>
+                        <p class="price">$139.00</p>
+                        <p class="features">Features: Slim Ergonomic Layout, Remote Control Operability, Dust Filter Net, Auto-Swing Louvers.</p>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=300&q=80" alt="Titanium Flagship">
+                        </div>
+                        <h3>AeroX Pro Titanium Max</h3>
+                        <p class="price">$1,199.00</p>
+                        <p class="features">Specs: 256GB Storage, 3nm AI chip, Ultra-wide Titanium chassis, 200MP Triple Camera matrix with 5x Optical zoom.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=300&q=80" alt="Ultra Zoom Flagship">
+                        </div>
+                        <h3>Nova Ultra 5G Stylus</h3>
+                        <p class="price">$1,249.00</p>
+                        <p class="features">Specs: 512GB Storage, Integrated Bluetooth Stylus, Dynamic AMOLED 120Hz panel, 100x Space Zoom system.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Smartphone" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=300&q=80" alt="Pure Android Flagship">
+                        </div>
+                        <h3>Zenith Pixel Prime Lens</h3>
+                        <p class="price">$999.00</p>
+                        <p class="features">Specs: 128GB Storage, Pure AI Computational Photography system, NightSight Master, 7-year direct software lifecycle support.</p>
+                    </a>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td style="width: 33.33%">
+                    <a href="electronics.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=300&q=80" alt="Large Appliances Deals">
+                        </div>
+                        <h3>Home Appliances</h3>
+                        <p class="card-desc">Upgrade your lifestyle with top refrigerators, advanced front-load washers, and air conditioners.</p>
+                        <span class="explore-link">Shop Large Appliances </span>
+                    </a>
+                </td>
+                <td style="width: 33.33%">
+                    <a href="mobiles.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=300&q=80" alt="Smartphone Deals">
+                        </div>
+                        <h3>Latest Smartphones</h3>
+                        <p class="card-desc">Discover Next-Gen mobile devices featuring stunning camera matrices and fast processing chips.</p>
+                        <span class="explore-link">View Mobile Deals </span>
+                    </a>
+                </td>
+                <td style="width: 33.33%">
+                    <a href="categories.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=300&q=80" alt="All Categories">
+                        </div>
+                        <h3>Shop All Departments</h3>
+                        <p class="card-desc">Browse our beautifully structured database categories including personal grooming, footwear, and more.</p>
+                        <span class="explore-link">See All Categories </span>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="categories.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=300&q=80" alt="Streetwear Fashion">
+                        </div>
+                        <h3>Trending Streetwear</h3>
+                        <p class="card-desc">Stay ahead with modern aesthetic drop-shoulder oversized hoodies, utility cargo pants, and Y2K shades.</p>
+                        <span class="explore-link">Explore Fashion </span>
+                    </a>
+                </td>
+                <td>
+                    <a href="categories.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=300&q=80" alt="Books Category">
+                        </div>
+                        <h3>Best Seller Books</h3>
+                        <p class="card-desc">Dive into classic sci-fi world-building, high-productivity toolsets, and investment logic manuals.</p>
+                        <span class="explore-link">Browse Bookshelf </span>
+                    </a>
+                </td>
+                <td>
+                    <a href="cart.html">
+                        <div class="img-container">
+                            <img class="home-card-img" src="https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?auto=format&fit=crop&w=300&q=80" alt="Review Shopping Cart">
+                        </div>
+                        <h3>Your Shopping Cart</h3>
+                        <p class="card-desc">Review your selected items, modify item quantities, and execute your secure payment checkouts quickly.</p>
+                        <span class="explore-link">Go to Cart </span>
+                    </a>
+                </td>
+            </tr>
+             <tr>
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/Refrigerator" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://www.mitsubishielectric.com.au/wp-content/uploads/2022/03/MR-LA580ER-GSL-Open-Hires-1920x1440-1.jpg" alt="French Door Refrigerator">
+                        </div>
+                        <h3>ZonMax 580L French Door Fridge</h3>
+                        <p class="price">$1,299.00</p>
+                        <p class="features">Features: Inverter Compressor, Convertible Zone, Water Dispenser, Wi-Fi Enabled Smart Cooling.</p>
+                    </a>
+                </td>
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/Refrigerator" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="Side by Side Refrigerator">
+                        </div>
+                        <h3>VoltHorizon 650L Side-by-Side</h3>
+                        <p class="price">$1,499.00</p>
+                        <p class="features">Features: Auto Defrost, Digital Touch Display, Toughened Glass Shelves, Door Alarm Integration.</p>
+                    </a>
+                </td>
+                <td style="width: 33%">
+                    <a href="https://en.wikipedia.org/wiki/Refrigerator" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=400&q=80" alt="Double Door Refrigerator">
+                        </div>
+                        <h3>Nexus Frost 345L Double Door</h3>
+                        <p class="price">$649.00</p>
+                        <p class="features">Features: 3-Star Energy Rating, Smart Connect Inverter, Bottom Mounted Freezer, Odor Neutralizer.</p>
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+<script src="script.js"></script>
+    <footer>
+        <a href="home.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="index.html">Sign out</a>
+        <a href="Cart.html">Cart</a>
+    </footer>
+
+</body>
+
+</html>

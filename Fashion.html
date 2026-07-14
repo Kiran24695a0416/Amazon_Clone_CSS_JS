@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Modern Trend Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding-bottom: 80px;
+            background-color: rgba(95, 47, 255, 0.134);
+        }
+        header{
+            background:#131921;
+            padding:18px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        header a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #131921;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        table td a {
+            display: block;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .mobile-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        /* Smooth zoom animation when your cursor sits on the product box */
+        table td a:hover .mobile-img {
+            transform: scale(1.12);
+        }
+
+        h3 {
+            font-size: 14px;
+            margin: 8px 0;
+            color: #111;
+            font-weight: bold;
+        }
+
+        .price {
+            color: #B12704;
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .features {
+            font-size: 11px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        footer{
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            background:#131921;
+            display:flex;
+            justify-content:space-around;
+            padding:15px 0;
+            box-shadow:0 -2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        footer a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            padding:8px 15px;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        footer a:hover{
+            background:#ff9900;
+            color:black;
+            transform:scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="Fashion.html">Fashion</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="Products.html">Products</a>
+        <a href="Books.html">Books</a>
+
+    </header>
+
+    <div class="container">
+        <h2>What's Trending Now: Streetwear & Aesthetic Fashion (16 Products)</h2>
+        <table>
+            <tr>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Hoodie" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse4.mm.bing.net/th/id/OIP.vUVgXefrksQwqCVzhCYXdgHaJz?r=0&pid=ImgDet&w=184&h=244&c=7&dpr=1.3&o=7&rm=3" alt="Oversized Hoodie">
+                        </div>
+                        <h3>Aesthetic Heavyweight Oversized Hoodie</h3>
+                        <p class="price">$48.00</p>
+                        <p class="features">Style: Streetwear Core. Drop shoulder styling, double-lined spacious hood, premium 420 GSM brush fleece finish.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Sweater" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse1.mm.bing.net/th/id/OIP.q20TS8oQUu3septbODYQsQHaSN?r=0&pid=ImgDet&w=142&h=350&c=7&dpr=1.3&o=7&rm=3" alt="Knit Sweater">
+                        </div>
+                        <h3>Vintage Distressed Knit Sweater</h3>
+                        <p class="price">$42.50</p>
+                        <p class="features">Style: Grunge Minimalist. Breathable textured knit cotton blend, dropped armhole detailing, slightly frayed hem accents.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/Flannel" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse4.mm.bing.net/th/id/OIP._28juBLsAFxSMnLogt__0QHaNK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Boxy Flannel">
+                        </div>
+                        <h3>Boxy-Fit Plaid Overshirt Flannel</h3>
+                        <p class="price">$36.00</p>
+                        <p class="features">Style: Street Layering. Straight-cut relaxed fit hem, custom utility flap chest layout, mid-weight layering warmth.</p>
+                    </a>
+                </td>
+                <td style="width: 25%">
+                    <a href="https://en.wikipedia.org/wiki/T-shirt" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse3.mm.bing.net/th/id/OIP.mkI00_QAC4V-iu4TK_OYgwHaNK?r=0&pid=ImgDet&w=184&h=325&c=7&dpr=1.3&o=7&rm=3" alt="Graphic Tee">
+                        </div>
+                        <h3>Retro Acid-Wash Graphic Tee</h3>
+                        <p class="price">$26.00</p>
+                        <p class="features">Style: Vintage Y2K. Thick mock-neck ribbed collar, stone-wash distress fade design, heavy-duty loose silhouette structure.</p>
+                    </a>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Cargo_pants" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse3.mm.bing.net/th/id/OIP.LtTf87xyUthdU0PACGnzHQHaLQ?r=0&w=600&h=912&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cargo Pants">
+                        </div>
+                        <h3>Multi-Pocket Wide-Leg Cargo Pants</h3>
+                        <p class="price">$55.00</p>
+                        <p class="features">Style: Utility Gorpcore. Relaxed ultra-wide-leg silhouette, knee darts for shape movement, adjustable toggle cuffs.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Jeans" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse2.mm.bing.net/th/id/OIP.3MWiUQiAYufnXRtXe0LXsQHaKt?r=0&pid=ImgDet&w=184&h=266&c=7&dpr=1.3&o=7&rm=3" alt="Baggy Jeans">
+                        </div>
+                        <h3>90s Baggy Fit Skater Denim Jeans</h3>
+                        <p class="price">$59.00</p>
+                        <p class="features">Style: Skater Aesthetic. Mid-rise vintage light wash denim, relaxed through the thigh and opening, classic distressing.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Trousers" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse3.mm.bing.net/th/id/OIP.lrIFihWzcnvTL9LRnqyw2QHaKK?r=0&pid=ImgDet&w=206&h=283&c=7&dpr=1.3&o=7&rm=3" alt="Pleated Trousers">
+                        </div>
+                        <h3>Pleated Relaxed Tailored Trousers</h3>
+                        <p class="price">$49.99</p>
+                        <p class="features">Style: Minimalist Smart. Sharp front double pleat design, drapery fluid fabric layout, perfect casual or formal wear.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Shorts" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://tse2.mm.bing.net/th/id/OIP.twjddPYpzujdc-oGgbgTVwHaHN?r=0&pid=ImgDet&w=165&h=161&c=7&dpr=1.3&o=7&rm=3" alt="Mesh Shorts">
+                        </div>
+                        <h3>Heavy Mesh Street Workout Shorts</h3>
+                        <p class="price">$22.00</p>
+                        <p class="features">Style: Athleisure Luxury. Double-layer breathable heavyweight open mesh, 5-inch above knee inseam, deep zipper pockets.</p>
+                    </a>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Sneakers" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://www.bing.com/th/id/OIP.c33BGXs9eMdhReqyJSvN2QHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" alt="Chunky Sneakers">
+                        </div>
+                        <h3>Chunky Platform Retro Sneakers</h3>
+                        <p class="price">$85.00</p>
+                        <p class="features">Style: Dad Shoe / Y2K. Sculpted exaggerated midsole platform, multi-material paneling layout, superior comfort sockliner.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Boot" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://www.bing.com/th/id/OIP.USgsvCPDkIoyuZUTpuGr4gHaJQ?w=193&h=241&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" alt="Lug Sole Boots">
+                        </div>
+                        <h3>Lug-Sole Premium Casual Chelsea Boots</h3>
+                        <p class="price">$110.00</p>
+                        <p class="features">Style: Cyber Punk/Minimalist. Elastic side gore panels, thick statement lug tread outsole, weather-resistant micro-leather.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Sandal" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Fancy_sandals.png/500px-Fancy_sandals.png" alt="Slide Sandals">
+                        </div>
+                        <h3>Minimalist Matte Cloud Slides</h3>
+                        <p class="price">$25.00</p>
+                        <p class="features">Style: Lazy Lounge Aesthetic. Single piece injection EVA molding, extra thick compression recovery cushion, water-safe.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Sneakers" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://th.bing.com/th/id/OIP.-ncX-Dp7j-8o3Jh58RyGLQHaHa?w=179&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Suede Low Tops">
+                        </div>
+                        <h3>Vintage Cream Suede Low-Tops</h3>
+                        <p class="price">$79.00</p>
+                        <p class="features">Style: Clean-Girl/Boy Luxury. Earthy neutral colorways, low-profile gum sole finish, buttery-soft genuine suede upper body.</p>
+                    </a>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Sunglasses" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://www.bing.com/th/id/OIP.iz9E-mc7cCwa0V0V2aSMcwHaEJ?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" alt="Y2K Glasses">
+                        </div>
+                        <h3>Y2K Rimless Tinted Sunglasses</h3>
+                        <p class="price">$18.50</p>
+                        <p class="features">Style: Early 2000s Drip. Sleek frameless silver hardware structure, ombre color gradient lenses, total UV400 sun blocking.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Messenger_bag" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://www.bing.com/th/id/OIP.inW3HghXG3oFnKUi7DenYQAAAA?w=193&h=290&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" alt="Sling Bag">
+                        </div>
+                        <h3>Minimalist Waterproof Crossbody Sling</h3>
+                        <p class="price">$32.00</p>
+                        <p class="features">Style: Functional Techwear. Sleek matte geometric profile layout, internal modular tech dividers, quick-release security buckle.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Beanie_(hat)" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="https://th.bing.com/th/id/OIP.orhBxROjsq_2q9kn6oeTPAHaHa?w=171&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Fisherman Beanie">
+                        </div>
+                        <h3>Ribbed Short Fisherman Beanie</h3>
+                        <p class="price">$14.00</p>
+                        <p class="features">Style: Indie Aesthetic. Shallow sit profile above ears, tightly knit woven ribbed texture, warm acrylic composition.</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Jewellery" target="_blank">
+                        <div class="img-container">
+                            <img class="mobile-img" src="data:image/webp;base64,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" alt="Silver Chain">
+                        </div>
+                        <h3>5mm Stainless Steel Cuban Link Chain</h3>
+                        <p class="price">$22.50</p>
+                        <p class="features">Style: Everyday Essentials. Corrosion-proof high-polish finish, sleek secure lobster-claw clasp, hypo-allergenic material.</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+<script src="script.js"></script>
+    <footer>
+        <a href="home.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="index.html">Sign out</a>
+        <a href="Cart.html">Cart</a>
+    </footer>
+
+</body>
+</html>
